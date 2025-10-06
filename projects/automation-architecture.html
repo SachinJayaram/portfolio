@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Architecture - Sachin Jayaram</title>
+    <meta name="description" content="Built comprehensive GitHub automation for AWS configurations, achieving 95% error reduction in deployment processes.">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+            color: white;
+            padding: 8rem 0 4rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .project-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        
+        .project-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        
+        .project-hero h1 {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 700;
+        }
+        
+        .section-subtitle {
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+            font-weight: 500;
+        }
+        
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .meta-item {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .meta-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: var(--primary-dark);
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .tech-tag {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">SJ</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#experience" class="nav-link">Experience</a>
+                <a href="../index.html#projects" class="nav-link">Projects</a>
+                <a href="../index.html#certifications" class="nav-link">Certifications</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <h1>Automation Architecture</h1>
+            <p class="section-subtitle">Built comprehensive GitHub automation for AWS configurations, achieving 95% error reduction in deployment processes</p>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <h4>Timeline</h4>
+                    <p>Oct 2021 - Jan 2023</p>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-building"></i>
+                    <h4>Company</h4>
+                    <p>Capital One</p>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Impact</h4>
+                    <p>95% Error Reduction</p>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Role</h4>
+                    <p>Senior Software Engineer</p>
+                </div>
+            </div>
+
+            <h2>Project Overview</h2>
+            <p>Developed and implemented a comprehensive automation architecture at Capital One that integrated GitHub workflows with AWS configuration management. This project achieved a 95% reduction in deployment errors while significantly improving the efficiency and reliability of the software delivery pipeline.</p>
+
+            <h2>Key Achievements</h2>
+            <ul>
+                <li><strong>95% Error Reduction:</strong> Implemented automated validation and testing that caught configuration errors before deployment, dramatically reducing production incidents.</li>
+                <li><strong>GitHub Actions Integration:</strong> Created sophisticated CI/CD pipelines that automated the entire deployment process from code commit to production.</li>
+                <li><strong>AWS Configuration Automation:</strong> Developed tools and scripts that automated the provisioning and configuration of AWS resources, ensuring consistency across environments.</li>
+                <li><strong>Quality Gates Implementation:</strong> Established automated quality checks that prevented faulty code from reaching production environments.</li>
+            </ul>
+
+            <h2>Technical Implementation</h2>
+            <p>The automation architecture project involved several critical technical components:</p>
+            
+            <h3>GitHub Actions Workflows</h3>
+            <ul>
+                <li>Development of reusable workflow templates for common deployment patterns</li>
+                <li>Implementation of matrix strategies for testing across multiple environments</li>
+                <li>Integration of security scanning and vulnerability assessment in the CI pipeline</li>
+                <li>Creation of automated rollback mechanisms for failed deployments</li>
+            </ul>
+
+            <h3>AWS Configuration Management</h3>
+            <ul>
+                <li>Development of Infrastructure as Code (IaC) templates using CloudFormation and Terraform</li>
+                <li>Implementation of automated resource tagging and cost optimization</li>
+                <li>Creation of configuration drift detection and remediation systems</li>
+                <li>Development of automated backup and disaster recovery procedures</li>
+            </ul>
+
+            <h3>Quality Assurance Automation</h3>
+            <ul>
+                <li>Integration of automated testing frameworks at multiple levels (unit, integration, end-to-end)</li>
+                <li>Implementation of code quality gates using static analysis tools</li>
+                <li>Development of automated performance testing and monitoring</li>
+                <li>Creation of compliance checking and audit trail generation</li>
+            </ul>
+
+            <h2>Architecture Components</h2>
+            <p>The automation architecture consisted of several interconnected components:</p>
+            
+            <h3>Source Control Integration</h3>
+            <ul>
+                <li>GitHub webhook integration for triggering automated workflows</li>
+                <li>Branch protection rules and automated code review processes</li>
+                <li>Automated dependency updates and security patch management</li>
+            </ul>
+
+            <h3>Deployment Pipeline</h3>
+            <ul>
+                <li>Multi-stage deployment process with automated testing at each stage</li>
+                <li>Blue-green deployment strategies for zero-downtime deployments</li>
+                <li>Automated database migration and schema update processes</li>
+                <li>Integration with monitoring and alerting systems</li>
+            </ul>
+
+            <h2>Technologies Used</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">GitHub Actions</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Terraform</span>
+                <span class="tech-tag">CloudFormation</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">Kubernetes</span>
+                <span class="tech-tag">Jenkins</span>
+                <span class="tech-tag">SonarQube</span>
+                <span class="tech-tag">Selenium</span>
+            </div>
+
+            <h2>Business Impact</h2>
+            <p>The automation architecture project delivered significant business value by reducing deployment errors, improving developer productivity, and accelerating time-to-market for new features. The 95% error reduction resulted in fewer production incidents, reduced downtime, and improved customer satisfaction. Additionally, the automated processes freed up development teams to focus on feature development rather than manual deployment tasks.</p>
+
+            <h2>Key Metrics</h2>
+            <ul>
+                <li><strong>Deployment Error Rate:</strong> Reduced from 15% to 0.75% (95% improvement)</li>
+                <li><strong>Deployment Time:</strong> Reduced from 2 hours to 15 minutes (87.5% improvement)</li>
+                <li><strong>Developer Productivity:</strong> Increased by 40% due to reduced manual tasks</li>
+                <li><strong>Production Incidents:</strong> Reduced by 90% due to automated quality gates</li>
+            </ul>
+
+            <h2>Lessons Learned</h2>
+            <p>This project demonstrated the critical importance of automation in modern software development. The success was largely attributed to the comprehensive approach that addressed both technical infrastructure and process automation, ensuring that improvements were sustainable and scalable. The project also highlighted the importance of gradual implementation and team training to ensure successful adoption of new automation tools and processes.</p>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="../index.html#projects" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sachin Jayaram. All rights reserved.</p>
+                <p>Licensed under the Apache License, Version 2.0.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

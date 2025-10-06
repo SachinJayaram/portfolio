@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://sachinjayaram.github.io/portfolio/sitemap.xml
+
+# Disallow certain file types
+Disallow: *.pdf
+Disallow: /certs/
+Disallow: /resume/
+
+# Allow important directories
+Allow: /assets/
+Allow: /projects/
