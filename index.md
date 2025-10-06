@@ -35,10 +35,18 @@ I lead large-scale transformations that improve reliability, speed, and business
 
 ---
 
+## 🎓 Certifications
+- [AWS Certified Solutions Architect – Associate](https://www.credly.com/badges/304dfbe0-affe-447d-a6d4-d251085e80b4/public_url)  
+  Credly badge verification link
+- [MBA in Technology Management and Finance](certs/mba-tech-management.pdf)
+- [MS in Electrical Engineering](certs/ms-electrical-engineering.pdf)
+
+---
+
 ## 🧰 Skills
 AWS • Terraform • Python • Security • DevOps • Kubernetes • Docker • GitHub Actions • Agile Leadership
 
 ---
 
 ## 📄 Resume
-[Download my resume (PDF)](resume/sachin-jayaram-resume.pdf)
+[Download my resume (PDF)](resume/sachinjayaram.pdf)
