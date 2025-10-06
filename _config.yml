@@ -1,0 +1,6 @@
+title: "Sachin Jayaram Portfolio"
+description: "Cloud, Security & Technology Leadership"
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
