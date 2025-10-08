@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Security Audit - Sachin Jayaram</title>
+    <meta name="description" content="Comprehensive internal security audit for Botium Toys using NIST Cybersecurity Framework, evaluating controls and compliance with PCI DSS, GDPR, and SOC standards.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="shortcut icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="apple-touch-icon" href="../favicon.svg">
+    <meta name="msapplication-TileImage" content="../favicon.svg">
+    
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-hero {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+            color: white;
+            padding: 8rem 0 4rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        .project-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        
+        .project-hero .container {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .project-hero h1 {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: 700;
+        }
+        
+        .section-subtitle {
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+            font-weight: 500;
+        }
+        
+        .project-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .meta-item {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+        
+        .meta-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+        
+        .tech-tag {
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .audit-results {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+        
+        .compliance-section {
+            margin: 2rem 0;
+        }
+        
+        .compliance-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        .compliance-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .compliance-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .status-yes {
+            color: #059669;
+            font-weight: 600;
+        }
+        
+        .status-no {
+            color: #dc2626;
+            font-weight: 600;
+        }
+        
+        .status-partial {
+            color: #d97706;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">SJ</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="../index.html#home" class="nav-link">Home</a>
+                <a href="../index.html#about" class="nav-link">About</a>
+                <a href="../index.html#experience" class="nav-link">Experience</a>
+                <a href="../index.html#projects" class="nav-link">Projects</a>
+                <a href="../index.html#certifications" class="nav-link">Certifications</a>
+                <a href="../index.html#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="container">
+            <h1>Internal Security Audit</h1>
+            <p class="section-subtitle">Comprehensive cybersecurity audit for Botium Toys using NIST Cybersecurity Framework, evaluating controls and compliance with PCI DSS, GDPR, and SOC standards</p>
+        </div>
+    </section>
+
+    <!-- Project Content -->
+    <section class="project-content">
+        <div class="container">
+            <div class="project-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <h4>Timeline</h4>
+                    <p>Oct 2025</p>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-building"></i>
+                    <h4>Client</h4>
+                    <p>Botium Toys</p>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Framework</h4>
+                    <p>NIST Cybersecurity Framework</p>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Role</h4>
+                    <p>Security Auditor</p>
+                </div>
+            </div>
+
+            <h2>Project Overview</h2>
+            <p>Conducted a comprehensive internal IT security audit for Botium Toys, a small U.S. toy retailer expanding its online operations. The audit evaluated existing administrative, technical, and physical controls, assessed compliance with PCI DSS, GDPR, and SOC frameworks, and provided actionable recommendations to improve the company's security posture.</p>
+
+            <h2>Company Context</h2>
+            <p>Botium Toys develops and sells toys through a physical store and online platform. As the company grows internationally, risks around compliance, data protection, and system reliability have increased. The IT department manages employee devices, internal systems, customer data, and online payment systems.</p>
+
+            <h2>Audit Scope</h2>
+            <p>The audit covered the following asset groups:</p>
+            <ul>
+                <li>On-premises and employee equipment (computers, mobile devices, network hardware)</li>
+                <li>Internal network and data storage systems</li>
+                <li>Customer payment processing systems</li>
+                <li>Cloud services and internet access</li>
+                <li>Physical facilities (storefront, warehouse, offices)</li>
+            </ul>
+
+            <div class="audit-results">
+                <h2>Controls Assessment Results</h2>
+                <div class="compliance-grid">
+                    <div class="compliance-card">
+                        <h4>Access Controls</h4>
+                        <p><span class="status-no">❌ Least Privilege</span> - All employees have access to internal and cardholder data</p>
+                        <p><span class="status-no">❌ Separation of Duties</span> - Not implemented; broad access across teams</p>
+                        <p><span class="status-partial">⚠️ Password Policies</span> - Exists but not compliant with modern standards</p>
+                    </div>
+                    <div class="compliance-card">
+                        <h4>Network Security</h4>
+                        <p><span class="status-yes">✅ Firewall</span> - Configured to filter and block unwanted traffic</p>
+                        <p><span class="status-no">❌ Intrusion Detection</span> - Not yet installed</p>
+                        <p><span class="status-yes">✅ Antivirus Software</span> - Installed and monitored regularly</p>
+                    </div>
+                    <div class="compliance-card">
+                        <h4>Data Protection</h4>
+                        <p><span class="status-no">❌ Encryption</span> - Customer credit card data not encrypted</p>
+                        <p><span class="status-no">❌ Backups</span> - Critical data not backed up</p>
+                        <p><span class="status-no">❌ Password Management</span> - No centralized password manager</p>
+                    </div>
+                    <div class="compliance-card">
+                        <h4>Physical Security</h4>
+                        <p><span class="status-yes">✅ Physical Locks</span> - Offices, storefront, and warehouse secured</p>
+                        <p><span class="status-yes">✅ CCTV Surveillance</span> - Operational and monitored</p>
+                        <p><span class="status-yes">✅ Fire Detection</span> - Fire alarms and sprinklers active</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Compliance Assessment</h2>
+            <div class="compliance-section">
+                <h3>PCI DSS Compliance</h3>
+                <ul>
+                    <li><span class="status-no">❌ Authorized users only access cardholder data</span></li>
+                    <li><span class="status-no">❌ Credit card data processed/stored securely</span></li>
+                    <li><span class="status-no">❌ Encryption procedures implemented</span></li>
+                    <li><span class="status-partial">⚠️ Secure password management policies</span></li>
+                </ul>
+            </div>
+
+            <div class="compliance-section">
+                <h3>GDPR Compliance</h3>
+                <ul>
+                    <li><span class="status-partial">⚠️ EU customers' data kept private/secured</span></li>
+                    <li><span class="status-yes">✅ 72-hour breach notification plan</span></li>
+                    <li><span class="status-no">❌ Data classification and inventory</span></li>
+                    <li><span class="status-yes">✅ Privacy policy enforcement</span></li>
+                </ul>
+            </div>
+
+            <div class="compliance-section">
+                <h3>SOC 1 / SOC 2 Compliance</h3>
+                <ul>
+                    <li><span class="status-no">❌ User access policies established</span></li>
+                    <li><span class="status-no">❌ Sensitive data remains confidential/private</span></li>
+                    <li><span class="status-yes">✅ Data integrity maintained</span></li>
+                    <li><span class="status-yes">✅ Data available to authorized users</span></li>
+                </ul>
+            </div>
+
+            <h2>Key Recommendations</h2>
+            <ol>
+                <li><strong>Implement Access Control Policies</strong> - Introduce least privilege and separation of duties with role-based access control (RBAC)</li>
+                <li><strong>Adopt Encryption for Sensitive Data</strong> - Encrypt credit card data and personal information both at rest (AES-256) and in transit (TLS 1.2+)</li>
+                <li><strong>Develop Disaster Recovery and Backup Plan</strong> - Automate daily backups, store offsite, and test recovery quarterly</li>
+                <li><strong>Deploy Intrusion Detection System (IDS)</strong> - Add IDS/IPS for real-time network monitoring and alerting</li>
+                <li><strong>Upgrade Password Management and MFA</strong> - Enforce complex passwords, integrate password manager, and require multi-factor authentication</li>
+                <li><strong>Establish Asset Classification and Inventory</strong> - Maintain centralized catalog of all devices, systems, and data for visibility and compliance</li>
+                <li><strong>Enhance Employee Security Awareness</strong> - Conduct quarterly training on data handling, phishing prevention, and privacy compliance</li>
+            </ol>
+
+            <h2>Technologies & Frameworks Used</h2>
+            <div class="tech-stack">
+                <span class="tech-tag">NIST Cybersecurity Framework</span>
+                <span class="tech-tag">PCI DSS</span>
+                <span class="tech-tag">GDPR</span>
+                <span class="tech-tag">SOC 1/2</span>
+                <span class="tech-tag">Risk Assessment</span>
+                <span class="tech-tag">Compliance Auditing</span>
+                <span class="tech-tag">Security Controls</span>
+                <span class="tech-tag">GRC</span>
+            </div>
+
+            <h2>Project Impact</h2>
+            <p>This internal audit revealed several critical gaps in access control, encryption, and disaster recovery procedures. The comprehensive assessment provided Botium Toys with a clear roadmap to achieve stronger compliance with PCI DSS, GDPR, and SOC standards while improving overall resilience and reducing business risk.</p>
+
+            <h2>Key Lessons Learned</h2>
+            <p>This project demonstrated the importance of systematic security auditing in identifying vulnerabilities before they become incidents. The NIST Cybersecurity Framework provided an excellent structure for evaluating controls across all domains, while compliance assessment revealed the interconnected nature of security, privacy, and business operations. The experience highlighted how small businesses often have significant security gaps that can be addressed through systematic implementation of controls and regular monitoring.</p>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="../index.html#projects" class="btn btn-primary">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Sachin Jayaram. All rights reserved.</p>
+                <p>Licensed under the Apache License, Version 2.0.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
