@@ -1,0 +1,3 @@
+Professional Statement (Final Version)
+
+My name is Sachin. I am passionate about protecting people and organizations by strengthening cloud and cybersecurity systems. My strengths in problem-solving, automation, and cloud architecture, combined with values of integrity and accountability, drive me to build secure, efficient, and reliable technology environments. I’m excited to apply my technical and leadership experience to help businesses reduce risk and maintain trust in today’s connected world.
